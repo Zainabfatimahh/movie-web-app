@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎬 Movie Playlist App (Next.js)
 
-## Getting Started
+A simple movie playlist application built with Next.js, React, and Tailwind CSS.
+Users can add movies, edit existing movies, upload posters, and manage data using localStorage.
+The UI is fully responsive and optimized for mobile & desktop views.
 
-First, run the development server:
+✨ Features
 
-```bash
+➕ Add a new movie (title, year, poster)
+
+✏️ Edit existing movie details
+
+🖼 Image upload with live preview
+
+💾 Data stored in browser localStorage
+
+📱 Fully responsive (mobile, tablet, desktop)
+
+🎨 Modern UI with gradients & wave effects
+
+⚡ Fast routing using Next.js App Router
+
+🛠 Tech Stack
+
+Next.js 13+ (App Router)
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+lucide-react (icons)
+
+📂 Project Structure
+app/
+├── add/          # Add movie page
+├── edit/         # Edit movie page
+├── playlist/     # Movie list page
+├── main/         # Empty state / landing page
+components/
+├── MovieForm.tsx
+
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📱 Responsive Design
 
-## Learn More
+Uses Tailwind responsive utilities (sm, md, lg)
 
-To learn more about Next.js, take a look at the following resources:
+Layout switches automatically on mobile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tested using Chrome DevTools mobile view
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Image container uses aspect-square for consistency
 
-## Deploy on Vercel
+🧠 How Edit Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Selected movie ID is saved in localStorage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit page loads movie data using that ID
+
+Changes are saved back to localStorage
+
+User is redirected to playlist
+
+🧪 LocalStorage Example
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": "2010",
+    "imageUrl": "base64-image-string"
+  }
+]
+
+📌 Future Improvements
+
+Backend integration (MongoDB / Firebase)
+
+Authentication
+
+Delete movie feature
+
+Pagination
+
+Cloud image upload
+
+👩‍💻 Author
+
+Zainab Fatimah
+IT Student | Learning Full-Stack Development
+GitHub: https://github.com/Zainabfatimahh
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub — it really helps!
