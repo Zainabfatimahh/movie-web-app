@@ -4,7 +4,7 @@ A simple movie playlist application built with Next.js, React, and Tailwind CSS.
 Users can add movies, edit existing movies, upload posters, and manage data using localStorage.
 The UI is fully responsive and optimized for mobile & desktop views.
 
-✨ Features
+✨ Features:
 
 ➕ Add a new movie (title, year, poster)
 
